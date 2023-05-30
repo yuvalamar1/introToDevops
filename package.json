@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "mocha Tests/*.spec.js --color",
+    "test": "mocha tests/*.spec.js --color",
     "lint": "eslint . --color"
   },
   "keywords": [],
