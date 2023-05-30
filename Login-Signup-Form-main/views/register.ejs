@@ -1,0 +1,104 @@
+<!-- register.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .register-container {
+      width: 300px;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .register-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .register-container label {
+      display: block;
+      margin-bottom: 10px;
+      color: #777;
+    }
+
+    .register-container input[type="email"],
+    .register-container input[type="password"],
+    .register-container input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    .register-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .register-container button:hover {
+      background-color: #45a049;
+    }
+
+    .move-to-login {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    .move-to-login a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="register-container">
+    <h2>Register</h2>
+    <form action="/register" method="POST">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Password" required>
+
+      <label for="grade1">Grade 1:</label>
+      <input type="text" id="grade1" name="grade1" placeholder="Grade 1" required>
+
+      <label for="grade2">Grade 2:</label>
+      <input type="text" id="grade2" name="grade2" placeholder="Grade 2" required>
+
+      <label for="grade3">Grade 3:</label>
+      <input type="text" id="grade3" name="grade3" placeholder="Grade 3" required>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <div class="move-to-login">
+      Already have an account? <a href="/">Move to Login</a>
+    </div>
+  </div>
+</body>
+</html>
