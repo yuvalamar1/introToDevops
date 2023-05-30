@@ -6,8 +6,6 @@ version: 2.1
 # See: https://circleci.com/docs/configuration-reference/#jobs
 jobs:
   cicd-tests-and-lint:
-    executor:
-      name: node/default
     steps:
       - checkout
       - run:
