@@ -2,10 +2,14 @@
 # See: https://circleci.com/docs/configuration-reference
 version: 2.1
 
+orbs:
+  node: circleci/node@4.7
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/configuration-reference/#jobs
 jobs:
   cicd-tests-and-lint:
+    executor:
+      name: node/default
     steps:
       - checkout
       - run:
