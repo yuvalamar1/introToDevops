@@ -5,7 +5,7 @@ const userSchema = new mongoose.Schema({
   password: { type: String, required: true },
   grade1: { type: String, required: true },
   grade2: { type: String, required: true },
-  grade3: { type: String, required: true }
+  grade3: { type: String, required: true },
 });
 
 const User = mongoose.model('User', userSchema);
